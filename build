@@ -1,0 +1,11 @@
+#!/bin/bash
+if [[ "$1" == "install" ]];then
+    echo "installing..."
+    sudo mkdir /usr/include/PPK++
+    sudo cp *.h /usr/include/PPK++/
+    echo "installed"
+elif [[ "$1" == "remove" ]];then
+    echo "removing..."
+    sudo rm -r /usr/include/PPK++
+    echo "removed"
+fi
